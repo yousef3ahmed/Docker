@@ -1,0 +1,15 @@
+--- to build
+sudo docker build -t nameImage . 
+
+--- to list                                                    
+sudo docker image ls 
+
+--- to run                                                                
+sudo docker run --name express-app < CONTAINER NAME > -p 5000:5000 5e5ad961ad16 <IMAGE NAME> 
+
+--- to open terminal 
+sudo docker exec -it < CONTAINER NAME > bash  
+
+--- to delete image
+sudo docker rmi 5e5ad961ad16 <IMAGE NAME>                                            
+
